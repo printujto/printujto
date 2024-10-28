@@ -1,4 +1,3 @@
-import CalculatorIcon from '@/app/_icons/CalculatorIcon'
 import Link from 'next/link'
 import React, { ReactElement } from 'react'
 

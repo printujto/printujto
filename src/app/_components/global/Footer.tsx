@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Printujto_logo from '@/../public/Printujto_logo_dark.png'
 import Button from './Button'
+import CalculatorIcon from '@/app/_icons/CalculatorIcon'
 
 const Footer = () => {
     return (
@@ -82,7 +83,11 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className='flex justify-end'>
-                            <Button text='Vypočítat cenu' link='/'></Button>
+                            <Button
+                                text='Vypočítat cenu'
+                                link='/'
+                                icon={<CalculatorIcon className='w-5' />}
+                            ></Button>
                         </div>
                     </div>
                 </div>

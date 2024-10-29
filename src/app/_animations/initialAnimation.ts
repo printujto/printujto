@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 
 const InitialAnimation = () => {
-    let mm = gsap.matchMedia()
+    const mm = gsap.matchMedia()
 
     mm.add('(min-width: 768px)', () => {
         console.log('initializing')

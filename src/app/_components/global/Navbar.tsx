@@ -110,8 +110,4 @@ const Navbar = () => {
     )
 }
 
-const MobileMenu = () => {
-    return <div className='absolute w-full h-full bg-red-300'></div>
-}
-
 export default Navbar

@@ -10,6 +10,7 @@ import Button from './Button'
 import CalculatorIcon from '@/app/_icons/CalculatorIcon'
 import { useTheme } from 'next-themes'
 import InitialAnimation from '@/app/_animations/initialAnimation'
+import { usePathname } from 'next/navigation'
 
 const links = [
     {
@@ -44,9 +45,11 @@ const links = [
 
 const Navbar = () => {
     const [isOpened, setIsOpened] = useState(false)
-
     const { resolvedTheme } = useTheme()
-    const [logoSrc, setLogoSrc] = useState(Printujto_logo_dark) // Výchozí hodnota pro SSR
+    const [logoSrc, setLogoSrc] = useState(Printujto_logo_dark)
+
+    const path = usePathname()
+    console.log(path)
 
     useEffect(() => {
         if (resolvedTheme === 'light') {
@@ -55,34 +58,44 @@ const Navbar = () => {
             setLogoSrc(Printujto_logo_light)
         }
 
-        InitialAnimation()
-    }, [resolvedTheme])
+        InitialAnimation(path)
+    }, [resolvedTheme, path])
 
     return (
-        <nav className='flex fixed top-0 bg-slate-300/30 dark:bg-slate-400/30 shadow-sm backdrop-blur-md border-b-2 border-slate-700 border-opacity-5 justify-center w-full z-50'>
-            <div className='w-full max-w-[1230px] flex justify-between gap-2 items-center px-2 py-2'>
-                <Link href='/'>
-                    <Image
-                        src={logoSrc}
-                        width={150}
-                        alt='Printujto logo'
-                    ></Image>
-                </Link>
+        <nav
+            className={`${
+                isOpened ? 'h-[100vh] sm:h-16' : 'h-16 overflow-hidden'
+            } flex fixed duration-200 transition-all top-0 bg-slate-300/30 dark:bg-slate-400/30 shadow-sm backdrop-blur-md border-b-2 border-slate-700 border-opacity-5 justify-center w-full z-50`}
+        >
+            <div className='w-full max-w-[1230px] flex flex-col  gap-2 sm:gap-0 sm:flex-row sm:justify-between  items-center px-2 py-2'>
+                <div className='flex justify-between w-full items-center'>
+                    <Link href='/'>
+                        <Image
+                            src={logoSrc}
+                            width={150}
+                            alt='Printujto logo'
+                        ></Image>
+                    </Link>
+                    <HamburgerIcon
+                        handleClick={() => setIsOpened((prev) => !prev)}
+                        isOpened={isOpened}
+                    ></HamburgerIcon>
+                </div>
 
-                <div className='flex items-center gap-10'>
-                    <div>
-                        <ul className='gap-2 sm:flex hidden'>
-                            {links.map((link) => (
-                                <React.Fragment key={link.link}>
-                                    <NavLink
-                                        url={link.link}
-                                        text={link.text}
-                                    ></NavLink>
-                                </React.Fragment>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className='sm:block hidden'>
+                <div className='flex flex-col sm:flex-row items-center gap-10'>
+                    <ul className='gap-2 sm:flex text-center'>
+                        {links.map((link) => (
+                            <React.Fragment key={link.link}>
+                                <NavLink
+                                    url={link.link}
+                                    text={link.text}
+                                    handleClick={() => setIsOpened(false)}
+                                ></NavLink>
+                            </React.Fragment>
+                        ))}
+                    </ul>
+
+                    <div className=''>
                         <Button
                             text='Zjistit cenu'
                             link='/'
@@ -91,14 +104,14 @@ const Navbar = () => {
                             }
                         ></Button>
                     </div>
-                    <HamburgerIcon
-                        handleClick={() => setIsOpened((prev) => !prev)}
-                        isOpened={isOpened}
-                    ></HamburgerIcon>
                 </div>
             </div>
         </nav>
     )
+}
+
+const MobileMenu = () => {
+    return <div className='absolute w-full h-full bg-red-300'></div>
 }
 
 export default Navbar

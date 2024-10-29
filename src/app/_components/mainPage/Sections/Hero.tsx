@@ -5,7 +5,10 @@ import HeroImage from '../HeroImage'
 
 const Hero = () => {
     return (
-        <section className='lg:h-screen h-fit mt-40 lg:mt-0 flex lg:flex-row flex-col lg:gap-0 items-center'>
+        <section
+            id='hero'
+            className='lg:h-screen h-fit mt-40 lg:mt-0 flex lg:flex-row flex-col lg:gap-0 items-center overflow-hidden pb-10'
+        >
             <div className='lg:flex-1 flex flex-col items-center lg:items-start text-center lg:text-left'>
                 <h1 className='text-6xl'>Zakázkový 3D tisk</h1>
                 <p className='text-xl mt-3 sm:w-2/3'>
@@ -21,7 +24,7 @@ const Hero = () => {
                     icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
                 ></Button>
             </div>
-            <div className='flex-1 w-full aspect-square  h-fit md:max-h-[500px] max-w-[550px] lg:mt-0 mt-24'>
+            <div className='flex-1 w-full aspect-square h-fit md:max-h-[500px] max-w-[550px] lg:mt-0 mt-24'>
                 <HeroImage></HeroImage>
             </div>
         </section>

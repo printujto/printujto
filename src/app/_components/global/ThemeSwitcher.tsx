@@ -12,9 +12,9 @@ const ThemeSwitch = () => {
         setMounted(true)
         const savedTheme = window.localStorage.getItem('theme')
 
-        if (!savedTheme) {
+        if (!savedTheme || savedTheme === 'system') {
             window.localStorage.setItem('theme', 'light')
-            setTheme('light')
+            setTheme('dark')
         } else {
             setTheme(savedTheme)
         }

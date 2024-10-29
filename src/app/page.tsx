@@ -6,7 +6,10 @@ export default function Home() {
         <div className=''>
             <Hero></Hero>
             <WorksSlider></WorksSlider>
-            <section className='h-screen bg-blue-600' id='sluzby'></section>
+            <section
+                className='h-screen bg-blue-600 dark:bg-red-400'
+                id='sluzby'
+            ></section>
         </div>
     )
 }

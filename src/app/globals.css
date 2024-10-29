@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    @apply font-roboto scroll-smooth;
+    @apply font-roboto scroll-smooth transition-colors;
 }
 
 a {
@@ -11,20 +11,29 @@ a {
 }
 
 p {
-    @apply text-gray-700;
+    @apply text-gray-700 dark:text-gray-500;
 }
 
 h1 {
     @apply text-6xl font-bold;
 }
 h2 {
-    @apply text-3xl font-bold;
+    @apply text-3xl  font-bold;
 }
 h3 {
     @apply text-2xl font-bold;
 }
 h4 {
     @apply text-xl font-bold;
+}
+
+li,
+span,
+h1,
+h2,
+h3,
+h4 {
+    @apply text-black dark:text-white;
 }
 
 .embla__controls {

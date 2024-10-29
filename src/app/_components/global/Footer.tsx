@@ -1,19 +1,34 @@
+'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import Printujto_logo from '@/../public/Printujto_logo_dark.png'
+import Printujto_logo_dark from '@/../public/Printujto_logo_dark.png'
+import Printujto_logo_light from '@/../public/Printujto_logo_light.png'
+
 import Button from './Button'
 import CalculatorIcon from '@/app/_icons/CalculatorIcon'
+import { useTheme } from 'next-themes'
 
 const Footer = () => {
+    const { resolvedTheme } = useTheme()
+    const [logoSrc, setLogoSrc] = useState(Printujto_logo_dark) // Výchozí hodnota pro SSR
+
+    useEffect(() => {
+        if (resolvedTheme === 'light') {
+            setLogoSrc(Printujto_logo_dark)
+        } else {
+            setLogoSrc(Printujto_logo_light)
+        }
+    }, [resolvedTheme])
+
     return (
         <footer className='flex flex-col items-center justify-center w-full'>
             <div className='w-full p-4 max-w-[1230px] flex flex-col border-t-2 border-slate-700 border-opacity-5 pt-12'>
-                <div className='flex gap-6 w-full justify-around'>
+                <div className='flex sm:flex-row flex-col gap-6 w-full justify-around'>
                     <div className='w-full'>
                         <Link href='/'>
                             <Image
-                                src={Printujto_logo}
+                                src={logoSrc}
                                 width={150}
                                 alt='Printujto logo'
                             ></Image>

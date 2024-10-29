@@ -20,7 +20,7 @@ const Slider = () => {
                             width={280}
                             alt='image 1'
                         ></Image>
-                        <h2 className='text-center mt-2'>LOngboard</h2>
+                        <h2 className='text-center mt-2'>Longboard</h2>
                     </div>
                     <div className='embla__slide min-w-[280px] select-none px-4'>
                         <Image
@@ -29,7 +29,7 @@ const Slider = () => {
                             width={280}
                             alt='image 1'
                         ></Image>
-                        <h2 className='text-center mt-2'>LOngboard</h2>
+                        <h2 className='text-center mt-2'>Zub na VW</h2>
                     </div>
                     <div className='embla__slide min-w-[280px] select-none px-4'>
                         <Image
@@ -38,25 +38,16 @@ const Slider = () => {
                             width={280}
                             alt='image 1'
                         ></Image>
-                        <h2 className='text-center mt-2'>LOngboard</h2>
+                        <h2 className='text-center mt-2'>Cyklon</h2>
                     </div>
                     <div className='embla__slide min-w-[280px] select-none px-4'>
                         <Image
                             className='rounded-xl'
-                            src={Slide3}
+                            src={Slide1}
                             width={280}
                             alt='image 1'
                         ></Image>
-                        <h2 className='text-center mt-2'>LOngboard</h2>
-                    </div>
-                    <div className='embla__slide min-w-[280px] select-none px-4'>
-                        <Image
-                            className='rounded-xl'
-                            src={Slide3}
-                            width={280}
-                            alt='image 1'
-                        ></Image>
-                        <h2 className='text-center mt-2'>LOngboard</h2>
+                        <h2 className='text-center mt-2'>Longboard</h2>
                     </div>
                 </div>
             </div>

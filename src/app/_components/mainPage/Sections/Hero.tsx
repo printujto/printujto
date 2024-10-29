@@ -10,7 +10,7 @@ const Hero = () => {
             className='lg:h-screen h-fit mt-40 lg:mt-0 flex lg:flex-row flex-col lg:gap-0 items-center overflow-hidden pb-10'
         >
             <div className='lg:flex-1 flex flex-col items-center lg:items-start text-center lg:text-left'>
-                <h1 className='text-6xl'>Zakázkový 3D tisk</h1>
+                <h1 className='text-7xl'>Zakázkový 3D tisk</h1>
                 <p className='text-xl mt-3 sm:w-2/3'>
                     Profesionální a přesný 3D tisk, který promění vaše nápady v
                     realitu. Poskytujeme kvalitní tisk s různými materiály pro
@@ -20,7 +20,7 @@ const Hero = () => {
                 <Button
                     text='Poptat 3D tisk'
                     link=''
-                    className='py-3 px-8 mt-4'
+                    className='py-4 px-12 mt-4'
                     icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
                 ></Button>
             </div>

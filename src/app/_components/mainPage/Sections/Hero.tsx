@@ -10,8 +10,8 @@ const Hero = () => {
             className='lg:h-screen h-fit mt-40 lg:mt-0 flex lg:flex-row flex-col lg:gap-0 items-center overflow-hidden pb-10'
         >
             <div className='lg:flex-1 flex flex-col items-center lg:items-start text-center lg:text-left'>
-                <h1 className='text-7xl'>Zakázkový 3D tisk</h1>
-                <p className='text-xl mt-3 sm:w-2/3'>
+                <h1 className='sm:text-7xl text-5xl'>Zakázkový 3D tisk</h1>
+                <p className='text-lg sm:text-xl mt-3 sm:w-2/3'>
                     Profesionální a přesný 3D tisk, který promění vaše nápady v
                     realitu. Poskytujeme kvalitní tisk s různými materiály pro
                     rychlé prototypování, náhradní díly a kreativní projekty.

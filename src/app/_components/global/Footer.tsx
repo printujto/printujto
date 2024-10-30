@@ -22,9 +22,10 @@ const Footer = () => {
     }, [resolvedTheme])
 
     return (
-        <footer className='flex flex-col items-center justify-center w-full'>
-            <div className='w-full p-4 max-w-[1230px] flex flex-col border-t-2 border-slate-700 border-opacity-5 pt-12'>
-                <div className='flex sm:flex-row flex-col gap-6 w-full justify-around'>
+        <footer className='flex flex-col items-center justify-center w-full '>
+            <div className='w-full p-4 max-w-[1230px] flex flex-col pt-12'>
+                <div className='w-full  h-[1.5px] bg-black/15 dark:bg-slate-400/10 mt-20'></div>
+                <div className='flex sm:flex-row flex-col gap-6 w-full justify-around mt-10'>
                     <div className='w-full'>
                         <Link href='/'>
                             <Image
@@ -34,7 +35,7 @@ const Footer = () => {
                             ></Image>
                         </Link>
                         <ul className='mt-2'>
-                            <li className='font-bold'>Jan středula</li>
+                            <li className='font-bold'>Jan Středula</li>
                             <li>
                                 <span className='font-bold'>IČO:</span> 02269252
                             </li>
@@ -106,8 +107,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className='mt-4 flex justify-end pt-2 w-full border-t-2 border-slate-700 border-opacity-10'>
+                <div className='w-full  h-[1.5px] bg-black/15 dark:bg-slate-400/10 mt-20'></div>
+                <div className='mt-4 flex justify-end pt-2 w-full '>
                     <p className='text-sm'>© 2024 Printujto.cz</p>
                 </div>
             </div>

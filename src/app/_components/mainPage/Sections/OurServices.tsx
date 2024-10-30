@@ -3,7 +3,7 @@ import ServiceBox from '../ServiceBox'
 
 const cards = [
     {
-        mt: 10,
+        mt: 4,
         title: '3D tisk',
         text: 'Poskytujeme rychlý a kvalitní 3D tisk s různými materiály. Vhodné pro prototypování, jedinečné návrhy a náhradní díly. Naše moderní technologie zajistí precizní výsledky a spolehlivost.',
     },
@@ -18,7 +18,7 @@ const cards = [
         text: 'Přesné 3D skenování umožňuje digitalizaci fyzických objektů. Nabízíme kvalitní skenování pro další úpravy, archivaci nebo výrobu kopií originálních předmětů.',
     },
     {
-        mt: 0,
+        mt: 2,
         title: 'Poradenství a optimalizace návrhů',
         text: 'Pomůžeme vám s optimalizací vašich 3D návrhů a výběrem vhodných materiálů. Naše odborné poradenství zajistí, že váš projekt bude nejen estetický, ale také funkční a efektivní pro tisk.',
     },
@@ -26,14 +26,13 @@ const cards = [
 
 const OurServices = () => {
     return (
-        <section>
+        <section className='mt-10' id='our-services'>
             <h1 className='text-center '>Naše služby</h1>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full row-span-4 col-span-4 mt-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 w-full row-span-4 col-span-4 mt-10'>
                 {cards.map((card, i) => (
                     <React.Fragment key={i}>
                         <ServiceBox
-                            mt={`lg:mt-${card.mt}`}
                             number={`0${i + 1}.`}
                             title={card.title}
                             text={card.text}

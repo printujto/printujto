@@ -13,36 +13,36 @@ const Slider = () => {
         <div className='mt-6 overflow-hidden'>
             <div className='embla' ref={emblaRef}>
                 <div className='embla__container flex'>
-                    <div className='embla__slide min-w-[280px] select-none px-4'>
+                    <div className='embla__slide min-w-[230px] sm:min-w-[280px] select-none px-4'>
                         <Image
-                            className='rounded-xl'
+                            className='rounded-xl shadow-lg'
                             src={Slide1}
                             width={280}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Longboard</h2>
                     </div>
-                    <div className='embla__slide min-w-[280px] select-none px-4'>
+                    <div className='embla__slide min-w-[230px] sm:min-w-[280px] select-none px-4'>
                         <Image
-                            className='rounded-xl'
+                            className='rounded-xl shadow-lg'
                             src={Slide2}
                             width={280}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Zub na VW</h2>
                     </div>
-                    <div className='embla__slide min-w-[280px] select-none px-4'>
+                    <div className='embla__slide min-w-[230px] sm:min-w-[280px] select-none px-4'>
                         <Image
-                            className='rounded-xl'
+                            className='rounded-xl shadow-lg'
                             src={Slide3}
                             width={280}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Cyklon</h2>
                     </div>
-                    <div className='embla__slide min-w-[280px] select-none px-4'>
+                    <div className='embla__slide min-w-[230px] sm:min-w-[280px] select-none px-4'>
                         <Image
-                            className='rounded-xl'
+                            className='rounded-xl shadow-lg'
                             src={Slide1}
                             width={280}
                             alt='image 1'

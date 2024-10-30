@@ -7,7 +7,7 @@ const InitialAnimation = (path: string) => {
 
     if (path === '/') {
         mm.add('(min-width: 768px)', () => {
-            console.log('initializing')
+            //HERO
             gsap.fromTo(
                 '#background_blur_1',
                 {
@@ -68,11 +68,33 @@ const InitialAnimation = (path: string) => {
                     trigger: '#hero-image',
                     start: 'top 20%',
                     end: 'bottom 20%',
-                    scrub: -1,
+                    scrub: 0.5,
                 },
-
+                stagger: 1,
                 y: -50,
             })
+
+            //OUR WORKS
+            gsap.fromTo(
+                '.service-box',
+                {
+                    y: 200,
+                    opacity: 0,
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.4,
+                    stagger: 0.1,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: '#our-services',
+                        start: 'top 80%',
+                        end: 'bottom 80%',
+                        toggleActions: 'play none none reset',
+                    },
+                }
+            )
         })
     }
 }

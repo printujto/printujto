@@ -59,6 +59,7 @@ const Navbar = () => {
         }
 
         InitialAnimation(path)
+        console.log(window.innerHeight)
     }, [resolvedTheme, path])
 
     return (
@@ -67,7 +68,7 @@ const Navbar = () => {
                 isOpened ? 'h-[100vh] sm:h-16' : 'h-16 overflow-hidden'
             } flex fixed duration-200 transition-all top-0 bg-slate-300/30 dark:bg-slate-700/30 shadow-sm backdrop-blur-md border-b-2 border-slate-700 border-opacity-5 justify-center w-full z-50`}
         >
-            <div className='w-full max-w-[1230px] flex flex-col  gap-2 sm:gap-0 sm:flex-row sm:justify-between  items-center px-2 py-2'>
+            <div className='w-full h-[100svh] sm:h-full max-w-[1230px] flex flex-col  gap-2 sm:gap-0 sm:flex-row sm:justify-between items-center px-2 py-2'>
                 <div className='flex justify-between w-full items-center'>
                     <Link href='/'>
                         <Image
@@ -82,7 +83,7 @@ const Navbar = () => {
                     ></HamburgerIcon>
                 </div>
 
-                <div className='flex flex-col sm:flex-row items-center gap-10'>
+                <div className='flex flex-col sm:flex-row items-center h-full justify-between gap-2'>
                     <ul className='gap-2 sm:flex text-center'>
                         {links.map((link) => (
                             <React.Fragment key={link.link}>

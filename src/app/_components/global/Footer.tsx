@@ -98,13 +98,13 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className='flex justify-end'>
-                            <Button
-                                text='Vypočítat cenu'
-                                link='/'
-                                icon={<CalculatorIcon className='w-5' />}
-                            ></Button>
-                        </div>
+
+                        <Button
+                            className='sm:justify-self-start justify-self-end'
+                            text='Vypočítat cenu'
+                            link='/'
+                            icon={<CalculatorIcon className='w-5' />}
+                        ></Button>
                     </div>
                 </div>
                 <div className='w-full  h-[1.5px] bg-black/15 dark:bg-slate-400/10 mt-20'></div>

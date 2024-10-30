@@ -95,6 +95,40 @@ const InitialAnimation = (path: string) => {
                     },
                 }
             )
+
+            //PRINT PROCESS
+
+            ScrollTrigger.create({
+                trigger: '#print-process-line',
+                start: 'start center',
+                end: 'bottom center',
+
+                onUpdate: (self) => {
+                    const progress = self.progress * 100
+                    gsap.to('#print-process-line-fill', {
+                        ease: 'power1.in',
+                        duration: 0.2,
+                        height: progress + '%',
+                    })
+                },
+            })
+        })
+        gsap.utils.toArray('.print-process-box').forEach((box) => {
+            console.log(box)
+            if (!box) return
+
+            gsap.to(box, {
+                opacity: 1,
+                duration: 0.4,
+
+                ease: 'power1.out',
+                scrollTrigger: {
+                    trigger: box as HTMLElement,
+                    start: 'top center',
+                    end: 'bottom center',
+                    toggleActions: 'play none none reset',
+                },
+            })
         })
     }
 }

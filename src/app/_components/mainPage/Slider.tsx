@@ -1,5 +1,6 @@
 'use client'
 import useEmblaCarousel from 'embla-carousel-react'
+
 import Image from 'next/image'
 
 import Slide1 from '@/../public/SliderImages/Slide1.jpg'
@@ -7,7 +8,11 @@ import Slide2 from '@/../public/SliderImages/Slide2.jpg'
 import Slide3 from '@/../public/SliderImages/Slide3.jpg'
 
 const Slider = () => {
-    const [emblaRef] = useEmblaCarousel({ loop: true, align: 'center' })
+    const [emblaRef] = useEmblaCarousel({
+        loop: true,
+        align: 'center',
+        dragFree: true,
+    })
 
     return (
         <div className='mt-6 overflow-hidden'>

@@ -18,20 +18,12 @@ const links = [
         link: '/',
     },
     {
-        text: 'Portfolio',
-        link: '#portfolio',
+        text: 'O nás',
+        link: 'o-nas',
     },
     {
         text: 'Služby',
         link: '#sluzby',
-    },
-    {
-        text: 'O nás',
-        link: '#o-nas',
-    },
-    {
-        text: 'Proces',
-        link: '#proces',
     },
     {
         text: 'Q&A',
@@ -49,7 +41,6 @@ const Navbar = () => {
     const [logoSrc, setLogoSrc] = useState(Printujto_logo_dark)
 
     const path = usePathname()
-    console.log(path)
 
     useEffect(() => {
         if (resolvedTheme === 'light') {
@@ -59,7 +50,6 @@ const Navbar = () => {
         }
 
         InitialAnimation(path)
-        console.log(window.innerHeight)
     }, [resolvedTheme, path])
 
     return (
@@ -88,6 +78,11 @@ const Navbar = () => {
                         {links.map((link) => (
                             <React.Fragment key={link.link}>
                                 <NavLink
+                                    active={
+                                        link.link !== '/'
+                                            ? `/${link.link}` === path
+                                            : '/' === path
+                                    }
                                     url={link.link}
                                     text={link.text}
                                     handleClick={() => setIsOpened(false)}

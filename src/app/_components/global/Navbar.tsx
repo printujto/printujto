@@ -22,16 +22,16 @@ const links = [
         link: 'o-nas',
     },
     {
-        text: 'Služby',
-        link: '#sluzby',
+        text: 'Proces',
+        link: '/#print-process',
     },
     {
         text: 'Q&A',
         link: '#qaa',
     },
     {
-        text: 'Kontakt',
-        link: '#kontakt',
+        text: 'Poptat zakázku',
+        link: '#contact',
     },
 ]
 
@@ -93,7 +93,7 @@ const Navbar = () => {
 
                     <div className=''>
                         <Button
-                            text='Zjistit cenu'
+                            text='Kalkulátor ceny'
                             link='/'
                             icon={
                                 <CalculatorIcon className='w-5'></CalculatorIcon>

@@ -6,7 +6,7 @@ import PeopleIcon from '@/app/_icons/PeopleIcon'
 
 const AboutUs = () => {
     return (
-        <section className='mt-32'>
+        <section>
             <div className='flex flex-col-reverse md:flex-row gap-4 md:gap-10'>
                 <div className='sm:flex-1 flex-2 md:aspect-square aspect-video h-fit rounded-xl overflow-hidden flex relative'>
                     <Image

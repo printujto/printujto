@@ -3,7 +3,7 @@ import PrintProcessBox from '../PrintProcessBox'
 
 const PrintProcess = () => {
     return (
-        <section className='mt-32' id='print-process'>
+        <section className='pt-20' id='print-process'>
             <h1 className='text-center'>Proces tisku</h1>
 
             <div className='mt-10'>
@@ -52,7 +52,7 @@ const PrintProcess = () => {
                 </div>
                 <div className='flex  justify-center mt-2 sm:mt-0'>
                     <PrintProcessBox
-                        title='Odesílání výrobu'
+                        title='Odesílání výrobku'
                         text='lorem iasdfkj lasdjf asldkflkasdj lfjasdlkjf lasdjf asdlk'
                         number='06.'
                         variant='end'

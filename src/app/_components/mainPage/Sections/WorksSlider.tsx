@@ -5,7 +5,7 @@ import ArrowUpRight from '@/app/_icons/ArrowUpRight'
 
 const WorksSlider = () => {
     return (
-        <section className='min-h-screen mt-20'>
+        <section>
             <h1 className='text-center'>Ukázka naší práce</h1>
             <Slider></Slider>
             <div className='flex justify-center mt-10'>

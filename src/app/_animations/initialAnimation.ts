@@ -6,6 +6,26 @@ const InitialAnimation = (path: string) => {
     const mm = gsap.matchMedia()
 
     if (path === '/') {
+        //ONLY PHONE
+        mm.add('(max-width: 767px)', () => {
+            gsap.utils.toArray('.service-box').forEach((box) => {
+                if (!box) return
+                gsap.to(box, {
+                    opacity: 1,
+                    duration: 0.4,
+
+                    ease: 'power1.out',
+                    scrollTrigger: {
+                        trigger: box as HTMLElement,
+                        start: 'top center',
+                        end: 'bottom center',
+                        toggleActions: 'play none none reset',
+                    },
+                })
+            })
+        })
+
+        //ONLY PC
         mm.add('(min-width: 768px)', () => {
             //HERO
             gsap.fromTo(
@@ -113,8 +133,9 @@ const InitialAnimation = (path: string) => {
                 },
             })
         })
+
+        //Všechna zařízení
         gsap.utils.toArray('.print-process-box').forEach((box) => {
-            console.log(box)
             if (!box) return
 
             gsap.to(box, {

@@ -11,7 +11,7 @@ const PrintProcessBox = ({
 }) => {
     if (variant === 'end')
         return (
-            <div className=' w-full md:w-[400px]  h-fit flex flex-col gap-2 items-center'>
+            <div className=' w-full sm:w-[400px] h-fit flex flex-col gap-2 items-center'>
                 <div className=' p-2 rounded-full border-2 border-slate-400/20 hidden sm:block'>
                     <div className='w-3 h-3 rounded-full bg-gradient-to-tr from-violet from-30% to-pink'></div>
                 </div>

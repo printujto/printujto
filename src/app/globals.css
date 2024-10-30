@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    @apply font-roboto scroll-smooth transition-colors;
+    @apply font-roboto scroll-smooth transition-colors selection:bg-pink selection:text-black;
 }
 
 a {

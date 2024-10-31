@@ -7,7 +7,7 @@ import OurTeam from '../_components/aboutus/OurTeam'
 
 const page = () => {
     return (
-        <div className='mt-32 flex flex-col gap-10 md:gap-32'>
+        <div className='flex flex-col gap-10 md:gap-32'>
             <OurTeam></OurTeam>
             <OurStart></OurStart>
             <OurValues></OurValues>

@@ -20,7 +20,7 @@ const Hero = () => {
                 <Button
                     text='Poptat 3D tisk'
                     link=''
-                    className='py-4 px-12 mt-4'
+                    className='py-4 px-14 mt-4'
                     icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
                 ></Button>
             </div>

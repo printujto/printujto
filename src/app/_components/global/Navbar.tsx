@@ -19,7 +19,7 @@ const links = [
     },
     {
         text: 'O nás',
-        link: 'o-nas',
+        link: '/o-nas',
     },
     {
         text: 'Proces',
@@ -27,18 +27,18 @@ const links = [
     },
     {
         text: 'Q&A',
-        link: '#qaa',
+        link: '/#qaa',
     },
     {
         text: 'Poptat zakázku',
-        link: '#contact',
+        link: '/#contact',
     },
 ]
 
 const Navbar = () => {
     const [isOpened, setIsOpened] = useState(false)
     const { resolvedTheme } = useTheme()
-    const [logoSrc, setLogoSrc] = useState(Printujto_logo_dark)
+    const [logoSrc, setLogoSrc] = useState(Printujto_logo_light)
 
     const path = usePathname()
 
@@ -65,6 +65,7 @@ const Navbar = () => {
                             src={logoSrc}
                             width={150}
                             alt='Printujto logo'
+                            priority
                         ></Image>
                     </Link>
                     <HamburgerIcon
@@ -78,11 +79,6 @@ const Navbar = () => {
                         {links.map((link) => (
                             <React.Fragment key={link.link}>
                                 <NavLink
-                                    active={
-                                        link.link !== '/'
-                                            ? `/${link.link}` === path
-                                            : '/' === path
-                                    }
                                     url={link.link}
                                     text={link.text}
                                     handleClick={() => setIsOpened(false)}
@@ -91,10 +87,10 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    <div className=''>
+                    <div onClick={() => setIsOpened(false)}>
                         <Button
                             text='Kalkulátor ceny'
-                            link='/'
+                            link='/poptat-tisk'
                             icon={
                                 <CalculatorIcon className='w-5'></CalculatorIcon>
                             }

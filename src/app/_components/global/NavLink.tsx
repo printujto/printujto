@@ -9,7 +9,7 @@ const NavLink = ({
     url: string
     text: string
     handleClick: () => void
-    active: boolean
+    active?: boolean
 }) => {
     return (
         <Link

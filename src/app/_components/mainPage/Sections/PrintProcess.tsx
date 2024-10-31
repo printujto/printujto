@@ -48,13 +48,19 @@ const PrintProcess = () => {
                             number='05.'
                             variant='right'
                         ></PrintProcessBox>
+                        <PrintProcessBox
+                            variant='left'
+                            title='Kontrola kvality a balení'
+                            text='Jakmile je produkt po postprocessingu, provádíme kontrolu kvality. Naši technici zkontrolují, zda produkt splňuje všechny specifikace a standardy kvality, které jste si stanovili. Tento krok je klíčový pro zajištění, že každá část, kterou dodáváme, bude bezchybná. Následně produkt pečlivě zabalíme, abychom zajistili bezpečné doručení bez poškození.'
+                            number='06.'
+                        ></PrintProcessBox>
                     </div>
                 </div>
                 <div className='flex  justify-center mt-2 sm:mt-0'>
                     <PrintProcessBox
-                        title='Odesílání výrobku'
-                        text='lorem iasdfkj lasdjf asldkflkasdj lfjasdlkjf lasdjf asdlk'
-                        number='06.'
+                        title='Odeslání'
+                        text='Po úspěšné kontrole kvality je produkt připraven k odeslání. Nabízíme různé možnosti dopravy, abychom vyhověli vašim preferencím a časovým potřebám. Spolupracujeme se spolehlivými dopravci, abychom zajistili, že váš produkt bude doručen včas a v perfektním stavu. Po odeslání vám zašleme sledovací číslo, abyste mohli sledovat cestu vašeho produktu až k vám.'
+                        number='07.'
                         variant='end'
                     ></PrintProcessBox>
                 </div>

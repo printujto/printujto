@@ -2,6 +2,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const InitialAnimation = (path: string) => {
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
     gsap.registerPlugin(ScrollTrigger)
     const mm = gsap.matchMedia()
 

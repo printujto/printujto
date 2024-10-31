@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (prefers-color-scheme: dark) {
+    iframe[src*='https://3dobjectcalculator.netlify.app']
+    {
+        color-scheme: light;
+    }
+}
+
 * {
     @apply font-roboto scroll-smooth transition-colors selection:bg-pink selection:text-black;
 }

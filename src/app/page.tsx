@@ -1,5 +1,5 @@
 import AboutUs from './_components/mainPage/Sections/AboutUs'
-import Contact from './_components/mainPage/Sections/Contact'
+import DemandForm from './_components/mainPage/Sections/DemandForm'
 import Counter from './_components/mainPage/Sections/Counter'
 import Hero from './_components/mainPage/Sections/Hero'
 import OurServices from './_components/mainPage/Sections/OurServices'
@@ -17,7 +17,7 @@ export default function Home() {
             <AboutUs></AboutUs>
             <PrintProcess></PrintProcess>
             <QaA></QaA>
-            <Contact></Contact>
+            <DemandForm></DemandForm>
         </div>
     )
 }

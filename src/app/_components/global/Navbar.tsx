@@ -31,7 +31,7 @@ const links = [
     },
     {
         text: 'Poptat zakázku',
-        link: '/#contact',
+        link: '/#formular',
     },
 ]
 

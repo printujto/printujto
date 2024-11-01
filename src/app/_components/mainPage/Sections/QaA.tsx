@@ -38,7 +38,7 @@ const QaA = () => {
         <section className='pt-20' id='qaa'>
             <h1 className='text-center'>Nejčastější dotazy</h1>
             <div className='w-full pt-10 '>
-                <div className='mx-auto w-full max-w-lg divide-y divide-white/5 rounded-xl bg-white/5 border-2 border-slate-400/30 shadow-md'>
+                <div className='mx-auto w-full max-w-2xl divide-y divide-white/5 rounded-xl bg-white/5 border-2 border-slate-400/30 shadow-md'>
                     {qaa.map((item, i) => (
                         <Disclosure key={i} as='div' className='p-4 sm:p-6'>
                             <DisclosureButton className='group flex w-full items-center justify-between'>

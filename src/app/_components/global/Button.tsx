@@ -15,7 +15,7 @@ const Button = ({
     return (
         <Link href={link}>
             <button
-                className={`group/button text-white duration-200 bg-gradient-to-tr from-violet from-30% to-pink rounded-xl px-6 py-2 font-bold shadow-lg items-center flex gap-2 relative ${className}`}
+                className={`border hover:border-gray-300/50 border-gray-300/20 group/button text-white duration-200 bg-gradient-to-tr from-violet from-30% to-pink rounded-xl px-6 py-2 font-bold shadow-lg items-center flex gap-2 relative ${className}`}
             >
                 <div className='text-nowrap'>{text}</div>
                 <div className='px-1 group-hover/button:pl-2 group-hover/button:pr-0 duration-100 ease-in transition-all '>

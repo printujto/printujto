@@ -33,7 +33,7 @@ export default function RootLayout({
                 <ThemeProvider attribute='class'>
                     <ThemeSwitcher></ThemeSwitcher>
                     <Navbar></Navbar>
-                    <main className='w-full max-w-[1230px] flex-1 px-2 z-10 mt-32'>
+                    <main className='w-full max-w-[1230px] flex-1 px-2 z-10 '>
                         {children}
                     </main>
                     <Footer></Footer>

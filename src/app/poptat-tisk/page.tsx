@@ -10,13 +10,14 @@ const Calculator = () => {
                     <h2>Nemáte vlastní 3D model?</h2>
                     <p>Rádi ho pro vás vyhotovíme dle vašich představ</p>
                     <p>Stačí když vyplníte náš formulář</p>
-
-                    <Button
-                        text='Poptávkový formulář'
-                        link=''
-                        className='py-4 px-14 mt-4 justify-self-center lg:justify-self-start'
-                        icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
-                    ></Button>
+                    <div className='flex justify-center lg:justify-start'>
+                        <Button
+                            text='Poptávkový formulář'
+                            link=''
+                            className='py-4 px-14 mt-4'
+                            icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
+                        ></Button>
+                    </div>
                     <div className='w-96 h-[1.5px] mx-auto lg:mx-0 bg-black/15 dark:bg-slate-400/10 mt-20'></div>
                     <h2 className='mt-20'>Jak spočítat cenu</h2>
                     <div className='w-full flex justify-center'>

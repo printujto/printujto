@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section
             id='hero'
-            className='lg:h-screen h-fit flex lg:flex-row flex-col lg:gap-0 items-center'
+            className='mt-32 lg:mt-0 lg:h-screen h-fit flex lg:flex-row flex-col lg:gap-0 items-center'
         >
             <div className='lg:flex-1 flex flex-col items-center lg:items-start text-center lg:text-left'>
                 <h1 className='sm:text-7xl text-5xl'>Zakázkový 3D tisk</h1>

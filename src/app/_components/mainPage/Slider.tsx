@@ -54,6 +54,24 @@ const Slider = () => {
                         ></Image>
                         <h2 className='text-center mt-2'>Longboard</h2>
                     </div>
+                    <div className='embla__slide min-w-[230px] sm:min-w-[280px] select-none px-4'>
+                        <Image
+                            className='rounded-xl shadow-lg'
+                            src={Slide3}
+                            width={280}
+                            alt='image 1'
+                        ></Image>
+                        <h2 className='text-center mt-2'>Cyklon</h2>
+                    </div>
+                    <div className='embla__slide min-w-[230px] sm:min-w-[280px] select-none px-4'>
+                        <Image
+                            className='rounded-xl shadow-lg'
+                            src={Slide1}
+                            width={280}
+                            alt='image 1'
+                        ></Image>
+                        <h2 className='text-center mt-2'>Longboard</h2>
+                    </div>
                 </div>
             </div>
         </div>

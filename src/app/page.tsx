@@ -10,6 +10,7 @@ import WorksSlider from './_components/mainPage/Sections/WorksSlider'
 export default function Home() {
     return (
         <div className='flex flex-col gap-32' id='home-page'>
+            {/* <Hero2></Hero2> */}
             <Hero></Hero>
             <WorksSlider></WorksSlider>
             <OurServices></OurServices>

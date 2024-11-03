@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import Navbar from './_components/global/Navbar'
@@ -16,7 +15,12 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
     title: 'Printuj to',
-    description: 'Zakázkový 3D tisk',
+    description:
+        'Profesionální a přesný 3D tisk, který promění vaše nápady v realitu. Poskytujeme kvalitní tisk s různými materiály pro rychlé prototypování a náhradní díly.',
+    keywords: ['3D Tisk', 'Zakázkový 3D tisk', '3D tisk na zakázku'],
+    openGraph: {
+        images: ['@/../public/HeroImages/3dobj2.png'],
+    },
 }
 
 export default function RootLayout({

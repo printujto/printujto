@@ -74,7 +74,7 @@ const Navbar = () => {
                     ></HamburgerIcon>
                 </div>
 
-                <div className='flex flex-col sm:flex-row items-center'>
+                <menu className='flex flex-col sm:flex-row items-center'>
                     <ul className='gap-2 sm:flex text-center'>
                         {links.map((link) => (
                             <React.Fragment key={link.link}>
@@ -96,7 +96,7 @@ const Navbar = () => {
                             }
                         ></Button>
                     </div>
-                </div>
+                </menu>
             </nav>
         </header>
     )

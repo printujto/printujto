@@ -37,7 +37,12 @@ const Hero3 = () => {
                 className='flex-1filter: brightness-75 opacity-80'
                 id='heroImage3'
             >
-                <Image src={HeroImg} width={600} alt='heroImage'></Image>
+                <Image
+                    src={HeroImg}
+                    priority
+                    width={600}
+                    alt='heroImage'
+                ></Image>
             </div>
         </section>
     )

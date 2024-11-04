@@ -1,12 +1,12 @@
 import AboutUs from './_components/mainPage/Sections/AboutUs'
 import DemandForm from './_components/mainPage/Sections/DemandForm'
 import Counter from './_components/mainPage/Sections/Counter'
-import Hero from './_components/mainPage/Sections/Hero'
+
 import OurServices from './_components/mainPage/Sections/OurServices'
 import PrintProcess from './_components/mainPage/Sections/PrintProcess'
 import QaA from './_components/mainPage/Sections/QaA'
 import WorksSlider from './_components/mainPage/Sections/WorksSlider'
-import Hero2 from './_components/mainPage/Sections/Hero2'
+
 import Hero3 from './_components/mainPage/Sections/Hero3'
 
 export default function Home() {

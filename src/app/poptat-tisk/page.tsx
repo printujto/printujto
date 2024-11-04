@@ -24,7 +24,7 @@ const Calculator = () => {
                     <div className='flex justify-center lg:justify-start'>
                         <Button
                             text='Poptávkový formulář'
-                            link=''
+                            link='/#formular'
                             className='py-4 px-14 mt-4'
                             icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
                         ></Button>

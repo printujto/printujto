@@ -3,7 +3,10 @@ import React from 'react'
 
 const DemandForm = () => {
     return (
-        <section id='formular' className=' flex flex-col gap-4 items-center'>
+        <section
+            id='formular'
+            className=' flex flex-col gap-4 items-center pt-20'
+        >
             <h1 className='text-center'>Poptat zakázku</h1>
 
             <p className=' w-full sm:w-2/3'>

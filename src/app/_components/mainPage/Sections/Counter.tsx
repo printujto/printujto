@@ -3,7 +3,7 @@ import CounterDiv from '../CounterDiv'
 
 const Counter = () => {
     return (
-        <section className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 md:flex-row justify-around px-10 py-20'>
+        <section className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 md:flex-row justify-around px-10 pt-32 pb-12'>
             <CounterDiv title={'47'} des={'Dokončené projekty'}></CounterDiv>
             <div className='sm:flex hidden justify-center'>
                 <div className='w-[2px] h-full bg-black/15 dark:bg-slate-400/10'></div>

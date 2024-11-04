@@ -26,7 +26,7 @@ const cards = [
 
 const OurServices = () => {
     return (
-        <section id='our-services'>
+        <section id='nase-sluzby' className='pt-20'>
             <h1 className='text-center '>Naše služby</h1>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 w-full row-span-4 col-span-4 mt-10'>

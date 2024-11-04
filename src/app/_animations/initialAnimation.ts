@@ -109,7 +109,7 @@ const InitialAnimation = (path: string) => {
                     stagger: 0.1,
                     ease: 'power2.out',
                     scrollTrigger: {
-                        trigger: '#our-services',
+                        trigger: '#nase-sluzby',
                         start: 'top 80%',
                         end: 'bottom 80%',
                         toggleActions: 'play none none reset',
@@ -152,17 +152,16 @@ const InitialAnimation = (path: string) => {
                 },
             })
         })
+        gsap.to('#heroImage3', {
+            yoyo: true,
+            repeat: -1,
+            y: 25,
+            duration: 3,
+            ease: 'power1.inOut',
+            opacity: 0.9,
+            filter: 'brightness(1)',
+        })
     }
-
-    gsap.to('#heroImage3', {
-        yoyo: true,
-        repeat: -1,
-        y: 25,
-        duration: 3,
-        ease: 'power1.inOut',
-        opacity: 0.9,
-        filter: 'brightness(1)',
-    })
 }
 
 export default InitialAnimation

@@ -7,7 +7,7 @@ import HeroImg from '@/../public/HeroImages/3dobj2.png'
 const Hero3 = () => {
     return (
         <section
-            id='hero3'
+            id='uvod'
             className='mt-32 lg:mt-0 lg:h-screen h-fit flex lg:flex-row flex-col gap-10 lg:gap-0 items-center'
         >
             <div className='lg:flex-1 flex flex-col items-center lg:items-start text-center lg:text-left'>
@@ -19,15 +19,15 @@ const Hero3 = () => {
                 </p>
                 <div className='flex flex-col sm:flex-row items-center  sm:gap-4'>
                     <Button
-                        text='O nás'
-                        link='/o-nas'
+                        text='Naše služby'
+                        link='/#nase-sluzby'
                         variant='withoutBg'
                         className='py-4 px-14 mt-4'
                         icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
                     ></Button>
                     <Button
                         text='Poptat 3D tisk'
-                        link='/poptat-tisk'
+                        link='/#formular'
                         className='py-4 px-14 mt-4'
                         icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
                     ></Button>

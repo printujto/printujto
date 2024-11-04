@@ -11,12 +11,12 @@ import Hero3 from './_components/mainPage/Sections/Hero3'
 
 export default function Home() {
     return (
-        <div className='flex flex-col gap-32' id='home-page'>
+        <div className='flex flex-col gap-20' id='home-page'>
             <Hero3></Hero3>
             {/* <Hero2></Hero2> */}
             {/* <Hero></Hero> */}
-            <WorksSlider></WorksSlider>
             <OurServices></OurServices>
+            <WorksSlider></WorksSlider>
             <Counter></Counter>
             <AboutUs></AboutUs>
             <PrintProcess></PrintProcess>

@@ -20,7 +20,9 @@ export const metadata: Metadata = {
     keywords: ['3D Tisk', 'Zakázkový 3D tisk', '3D tisk na zakázku'],
     openGraph: {
         description: '3D tisk na zakázku.',
-        images: ['@/../public/HeroImages/3dobj2.png'],
+        images: [
+            'https://printujto.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPrintujto_logo_dark.dd321c22.png&w=384&q=75',
+        ],
     },
 }
 

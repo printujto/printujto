@@ -15,11 +15,11 @@ import { usePathname } from 'next/navigation'
 const links = [
     {
         text: 'Domů',
-        link: '/',
+        link: '/#uvod',
     },
     {
         text: 'O nás',
-        link: '/o-nas',
+        link: '/#o-nas',
     },
     {
         text: 'Proces',

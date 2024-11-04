@@ -32,5 +32,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             priority: 0.9,
         },
+        {
+            url: 'https://printujto.eu/doprava-a-platba',
+            lastModified: new Date(),
+            priority: 0.1,
+        },
+        {
+            url: 'https://printujto.cz/doprava-a-platba',
+            lastModified: new Date(),
+            priority: 0.1,
+        },
+        {
+            url: 'https://printujto.eu/gdpr',
+            lastModified: new Date(),
+            priority: 0.1,
+        },
+        {
+            url: 'https://printujto.cz/gdpr',
+            lastModified: new Date(),
+            priority: 0.1,
+        },
+        {
+            url: 'https://printujto.eu/obchodni-podminky',
+            lastModified: new Date(),
+            priority: 0.1,
+        },
+        {
+            url: 'https://printujto.cz/obchodni-podminky',
+            lastModified: new Date(),
+            priority: 0.1,
+        },
+        {
+            url: 'https://printujto.eu/reklamace',
+            lastModified: new Date(),
+            priority: 0.1,
+        },
+        {
+            url: 'https://printujto.cz/reklamace',
+            lastModified: new Date(),
+            priority: 0.1,
+        },
     ]
 }

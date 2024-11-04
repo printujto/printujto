@@ -3,7 +3,7 @@ import Slider from '../Slider'
 
 const WorksSlider = () => {
     return (
-        <section>
+        <section id='portfolio'>
             <h1 className='text-center'>Ukázka naší práce</h1>
             <Slider></Slider>
         </section>

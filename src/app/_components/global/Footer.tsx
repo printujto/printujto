@@ -4,14 +4,11 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Printujto_logo_dark from '@/../public/Printujto_logo_dark.png'
 import Printujto_logo_light from '@/../public/Printujto_logo_light.png'
-
-import Button from './Button'
-import CalculatorIcon from '@/app/_icons/CalculatorIcon'
 import { useTheme } from 'next-themes'
 
 const Footer = () => {
     const { resolvedTheme } = useTheme()
-    const [logoSrc, setLogoSrc] = useState(Printujto_logo_dark) // Výchozí hodnota pro SSR
+    const [logoSrc, setLogoSrc] = useState(Printujto_logo_light)
 
     useEffect(() => {
         if (resolvedTheme === 'light') {
@@ -45,15 +42,15 @@ const Footer = () => {
                             </li>
                             <li>
                                 <span className='font-bold'>Tel:</span>{' '}
-                                <a href='tel:+420 774 577 446'>
+                                <Link href='tel:+420 774 577 446'>
                                     +420 774 577 446
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <span className='font-bold'>Email:</span>{' '}
-                                <a href='mailto:info@printujto.cz'>
+                                <Link href='mailto:info@printujto.cz'>
                                     info@printujto.cz
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -61,50 +58,47 @@ const Footer = () => {
                     <div className='w-full'>
                         <h4>Odkazy</h4>
 
-                        <ul className='mt-2'>
+                        <ul className='mt-2 flex flex-col gap-1'>
                             <li>
-                                <a href=''>Domu</a>
+                                <Link href='/#uvod'>Domů</Link>
                             </li>
                             <li>
-                                <a href=''>Portfolio</a>
+                                <Link href='/#o-nas'>O nás</Link>
                             </li>
                             <li>
-                                <a href=''>Služby</a>
+                                <Link href='/#print-process'>Proces</Link>
                             </li>
                             <li>
-                                <a href=''>O nás</a>
+                                <Link href='/#qaa'>Q&A</Link>
                             </li>
                             <li>
-                                <a href=''>Proces</a>
-                            </li>
-                            <li>
-                                <a href=''>Q&A</a>
-                            </li>
-                            <li>
-                                <a href=''>Kontakt</a>
+                                <Link href='/#formular'>Poptat zakázku</Link>
                             </li>
                         </ul>
                     </div>
 
-                    <div className='w-full flex flex-col justify-between'>
-                        <div>
-                            <h4>Užitečné odkazy</h4>
-                            <ul className='mt-2'>
-                                <li>
-                                    <a href=''>Zpracování osobních údajů</a>
-                                </li>
-                                <li>
-                                    <a href=''>Doprava a platba</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <Button
-                            className='sm:justify-self-start justify-self-end'
-                            text='Vypočítat cenu'
-                            link='/'
-                            icon={<CalculatorIcon className='w-5' />}
-                        ></Button>
+                    <div className='w-full'>
+                        <h4>Užitečné odkazy</h4>
+                        <ul className='mt-2 flex flex-col gap-1'>
+                            <li>
+                                <Link href='/obchodni-podminky'>
+                                    Obchodní podmínky
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href='/gdpr'>
+                                    Zpracování osobních údajů
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href='/doprava-a-platba'>
+                                    Doprava a platba
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href='/reklamace'>Reklamační řád</Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className='w-full  h-[1.5px] bg-black/15 dark:bg-slate-400/10 mt-20'></div>

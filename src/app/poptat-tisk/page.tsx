@@ -29,7 +29,7 @@ const Calculator = () => {
                             icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
                         ></Button>
                     </div>
-                    <div className='w-96 h-[1.5px] mx-auto lg:mx-0 bg-black/15 dark:bg-slate-400/10 mt-20'></div>
+                    <div className='w-full sm:w-96 h-[1.5px] mx-auto lg:mx-0 bg-black/15 dark:bg-slate-400/10 mt-20'></div>
                     <h2 className='mt-20'>Jak spočítat cenu</h2>
                     <div className='w-full flex justify-center'>
                         <ul className=' text-left  pl-4 lg:w-full w-[400px]  list-disc mt-4'>

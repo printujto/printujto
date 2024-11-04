@@ -6,12 +6,15 @@ import OurServices from './_components/mainPage/Sections/OurServices'
 import PrintProcess from './_components/mainPage/Sections/PrintProcess'
 import QaA from './_components/mainPage/Sections/QaA'
 import WorksSlider from './_components/mainPage/Sections/WorksSlider'
+import Hero2 from './_components/mainPage/Sections/Hero2'
+import Hero3 from './_components/mainPage/Sections/Hero3'
 
 export default function Home() {
     return (
         <div className='flex flex-col gap-32' id='home-page'>
+            <Hero3></Hero3>
             {/* <Hero2></Hero2> */}
-            <Hero></Hero>
+            {/* <Hero></Hero> */}
             <WorksSlider></WorksSlider>
             <OurServices></OurServices>
             <Counter></Counter>

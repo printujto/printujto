@@ -8,21 +8,23 @@ const AboutUs = () => {
     return (
         <section>
             <div className='flex flex-col-reverse md:flex-row gap-4 md:gap-10'>
-                <div className='sm:flex-1 flex-2 md:aspect-square aspect-video h-fit rounded-xl overflow-hidden flex relative'>
-                    <Image
-                        src={PrinterImage}
-                        width={500}
-                        alt={'3D tiskárna v akci'}
-                        className='w-full rounded-xl object-cover'
-                    ></Image>
-                    <div className='md:hidden block absolute w-full h-full bg-black/40 top-0 left-0'></div>
-                    <div className='absolute bottom-2 right-2 w-fit h-fit md:hidden'>
-                        <Button
-                            className='px-8 py-3 mt-2 '
-                            text='Více o nás'
-                            link='/o-nas'
-                            icon={<PeopleIcon className='w-6'></PeopleIcon>}
-                        ></Button>
+                <div className='sm:flex-1 flex-2 relative'>
+                    <div className='sm:flex-1 flex-2 md:aspect-square aspect-video h-fit rounded-xl overflow-hidden flex sticky top-20'>
+                        <Image
+                            src={PrinterImage}
+                            width={500}
+                            alt={'3D tiskárna v akci'}
+                            className='w-full rounded-xl object-cover'
+                        ></Image>
+                        <div className='md:hidden block absolute w-full h-full bg-black/40 top-0 left-0'></div>
+                        <div className='absolute bottom-2 right-2 w-fit h-fit md:hidden'>
+                            <Button
+                                className='px-8 py-3 mt-2 '
+                                text='Více o nás'
+                                link='/o-nas'
+                                icon={<PeopleIcon className='w-6'></PeopleIcon>}
+                            ></Button>
+                        </div>
                     </div>
                 </div>
                 <div className='flex-1 md:flex-2 flex flex-col justify-between'>

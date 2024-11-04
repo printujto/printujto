@@ -24,7 +24,7 @@ const Footer = () => {
     return (
         <footer className='flex flex-col items-center justify-center w-full mt-20'>
             <div className='w-full p-4 max-w-[1230px] flex flex-col'>
-                <div className='w-full  h-[1.5px] bg-black/15 dark:bg-slate-400/10 mt-20'></div>
+                <div className='w-full  h-[1.5px] bg-black/15 dark:bg-slate-400/10'></div>
                 <div className='flex sm:flex-row flex-col gap-6 w-full justify-around mt-10'>
                     <div className='w-full'>
                         <Link href='/'>

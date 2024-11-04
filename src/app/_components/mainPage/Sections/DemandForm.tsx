@@ -6,9 +6,6 @@ const DemandForm = () => {
         <section id='formular' className=' flex flex-col gap-4 items-center'>
             <h1 className='text-center'>Poptat zakázku</h1>
 
-            <ul className='list-disc'>
-                <li>asdfafsd</li>
-            </ul>
             <p className=' w-full sm:w-2/3'>
                 Zašlete nám váš požadavek a my vás zpětně kontaktujeme s
                 cenouvou nabídkou. Pokud již máte svůj 3D model, můžete zakázku

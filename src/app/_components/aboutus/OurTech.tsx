@@ -1,19 +1,21 @@
 import React from 'react'
 import Image from 'next/image'
-import PrinterImage from '@/../public/HeroImages/3DPrinter.jpg'
+import SkullPrint2 from '@/../public/AboutUsImages/3DSkullPrint2.jpg'
 
 const OurTech = () => {
     return (
         <section>
-            <div className='flex flex-col-reverse md:flex-row gap-4 md:gap-10'>
-                <div className='sm:flex-1 flex-2 md:aspect-square aspect-video h-fit rounded-xl overflow-hidden flex relative'>
-                    <Image
-                        src={PrinterImage}
-                        width={500}
-                        alt={'3D tiskárna v akci'}
-                        className='w-full rounded-xl object-cover'
-                    ></Image>
-                    <div className='md:hidden block absolute w-full h-full bg-black/40 top-0 left-0'></div>
+            <div className='flex flex-col-reverse md:flex-row gap-4 md:gap-10 '>
+                <div className='sm:flex-1 flex-2 relative'>
+                    <div className='md:aspect-square aspect-video h-fit rounded-xl overflow-hidden flex sticky top-20'>
+                        <Image
+                            src={SkullPrint2}
+                            width={500}
+                            alt={'3D tiskárna v akci'}
+                            className='w-full rounded-xl object-cover object-center'
+                            style={{ objectPosition: '50% 75%' }}
+                        ></Image>
+                    </div>
                 </div>
                 <div className='flex-1 md:flex-2 flex flex-col justify-between'>
                     <div>

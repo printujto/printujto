@@ -63,37 +63,37 @@ const InitialAnimation = (path: string) => {
                     yoyo: true,
                 }
             )
-            gsap.to('.hero-image-1', {
-                scrollTrigger: {
-                    trigger: '#hero-image',
-                    start: 'top 20%',
-                    end: 'bottom 20%',
-                    scrub: 0.5,
-                },
-                rotate: -5,
-            })
+            // gsap.to('.hero-image-1', {
+            //     scrollTrigger: {
+            //         trigger: '#hero-image',
+            //         start: 'top 20%',
+            //         end: 'bottom 20%',
+            //         scrub: 0.5,
+            //     },
+            //     rotate: -5,
+            // })
 
-            gsap.to('.hero-image-2', {
-                scrollTrigger: {
-                    trigger: '#hero-image',
-                    start: 'top 20%',
-                    end: 'bottom 20%',
-                    scrub: 0.5,
-                },
+            // gsap.to('.hero-image-2', {
+            //     scrollTrigger: {
+            //         trigger: '#hero-image',
+            //         start: 'top 20%',
+            //         end: 'bottom 20%',
+            //         scrub: 0.5,
+            //     },
 
-                rotate: 10,
-            })
+            //     rotate: 10,
+            // })
 
-            gsap.to('.hero-small-image', {
-                scrollTrigger: {
-                    trigger: '#hero-image',
-                    start: 'top 20%',
-                    end: 'bottom 20%',
-                    scrub: 0.5,
-                },
-                stagger: 1,
-                y: -50,
-            })
+            // gsap.to('.hero-small-image', {
+            //     scrollTrigger: {
+            //         trigger: '#hero-image',
+            //         start: 'top 20%',
+            //         end: 'bottom 20%',
+            //         scrub: 0.5,
+            //     },
+            //     stagger: 1,
+            //     y: -50,
+            // })
 
             //OUR WORKS
             gsap.fromTo(
@@ -153,6 +153,16 @@ const InitialAnimation = (path: string) => {
             })
         })
     }
+
+    gsap.to('#heroImage3', {
+        yoyo: true,
+        repeat: -1,
+        y: 25,
+        duration: 3,
+        ease: 'power1.inOut',
+        opacity: 0.9,
+        filter: 'brightness(1)',
+    })
 }
 
 export default InitialAnimation

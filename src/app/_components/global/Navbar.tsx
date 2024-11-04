@@ -53,12 +53,12 @@ const Navbar = () => {
     }, [resolvedTheme, path])
 
     return (
-        <nav
+        <header
             className={`${
                 isOpened ? 'h-[100vh] sm:h-16' : 'h-16 overflow-hidden'
             } flex fixed duration-200 transition-all top-0 bg-slate-300/30 dark:bg-slate-700/30 shadow-sm backdrop-blur-md border-b-2 border-slate-700 border-opacity-5 justify-center w-full z-50`}
         >
-            <div className='w-full h-[100svh] sm:h-full max-w-[1230px] flex flex-col  gap-2 sm:gap-0 sm:flex-row sm:justify-between items-center px-2 py-2'>
+            <nav className='w-full h-[100svh] sm:h-full max-w-[1230px] flex flex-col  gap-2 sm:gap-0 sm:flex-row sm:justify-between items-center px-2 py-2'>
                 <div className='flex justify-between w-full items-center'>
                     <Link href='/'>
                         <Image
@@ -97,8 +97,8 @@ const Navbar = () => {
                         ></Button>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
     )
 }
 

@@ -36,6 +36,9 @@ const ThemeSwitch = () => {
 
     return (
         <button
+            aria-label='Přepínač barev webu'
+            role='button'
+            id='theme-switcher'
             onClick={switchTheme}
             className='fixed bottom-4 right-4 w-8 h-8 p-0 rounded-full z-50 group/themeSwitcher hover:p-0.5 transition-all duration-200 shadow-md'
         >

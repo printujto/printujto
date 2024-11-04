@@ -22,7 +22,7 @@ const Slider = () => {
                         <Image
                             className='rounded-xl shadow-lg'
                             src={Slide1}
-                            width={280}
+                            width={250}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Longboard</h2>
@@ -31,7 +31,7 @@ const Slider = () => {
                         <Image
                             className='rounded-xl shadow-lg'
                             src={Slide2}
-                            width={280}
+                            width={250}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Zub na VW</h2>
@@ -40,7 +40,7 @@ const Slider = () => {
                         <Image
                             className='rounded-xl shadow-lg'
                             src={Slide3}
-                            width={280}
+                            width={250}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Cyklon</h2>
@@ -49,7 +49,7 @@ const Slider = () => {
                         <Image
                             className='rounded-xl shadow-lg'
                             src={Slide1}
-                            width={280}
+                            width={250}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Longboard</h2>
@@ -58,7 +58,7 @@ const Slider = () => {
                         <Image
                             className='rounded-xl shadow-lg'
                             src={Slide3}
-                            width={280}
+                            width={250}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Cyklon</h2>
@@ -67,7 +67,7 @@ const Slider = () => {
                         <Image
                             className='rounded-xl shadow-lg'
                             src={Slide1}
-                            width={280}
+                            width={250}
                             alt='image 1'
                         ></Image>
                         <h2 className='text-center mt-2'>Longboard</h2>

@@ -89,7 +89,7 @@ const Navbar = () => {
 
                     <div onClick={() => setIsOpened(false)}>
                         <Button
-                            text='Kalkulátor ceny'
+                            text='KALKULÁTOR CENY'
                             link='/poptat-tisk'
                             icon={
                                 <CalculatorIcon className='w-5'></CalculatorIcon>

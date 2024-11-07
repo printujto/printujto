@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from '../_components/global/Button'
 import ArrowUpRight from '../_icons/ArrowUpRight'
 import { Metadata } from 'next'
@@ -55,10 +54,10 @@ const Calculator = () => {
                     <div className='w-full sm:w-[450px]'>
                         <div className='shadow-md bg-gray-100/50 dark:bg-gray-200/40 border-gray-400/50 dark:border-gray-800/50 border-2 rounded-2xl p-2 w-full'>
                             <iframe
-                                src='https://3dobjectcalculator.netlify.app'
+                                src='https://3dcalc.netlify.app'
                                 name='Kalkulátor pro 3D modely'
                                 title='Kalkulátor pro výpočet ceny za tisk 3D modelu'
-                                className='w-full'
+                                className='w-full bg-transparent dark:bg-transparent'
                                 height='680px'
                             ></iframe>
                         </div>

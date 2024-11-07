@@ -21,7 +21,7 @@ const DemandForm = () => {
             <div className='w-full max-w-xl'>
                 <div className=' shadow-md bg-gray-100/50 dark:bg-gray-200/40 border-gray-400/50 dark:border-gray-800/50 border-2 rounded-2xl p-2'>
                     <iframe
-                        src='https://3dobjectcalculator.netlify.app/poptavka'
+                        src='https://3dcalc.netlify.app/poptavka'
                         name='Poptat 3d tisk'
                         title='Poptávkový formulář'
                         className='w-full h-[630px] sm:h-[610px]'

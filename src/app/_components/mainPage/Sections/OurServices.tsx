@@ -19,7 +19,7 @@ const cards = [
     },
     {
         mt: 2,
-        title: 'Poradenství a optimalizace návrhů',
+        title: 'Poradenství',
         text: 'Nabízíme odborné poradenství a optimalizaci vašich 3D návrhů včetně výběru vhodných materiálů. Naši specialisté zajistí, aby váš projekt byl esteticky atraktivní, funkční a efektivní pro tisk. S našimi zkušenostmi a individuálním přístupem maximalizujete kvalitu výsledného produktu a minimalizujete výrobní náklady, čímž urychlíte uvedení projektu na trh.',
     },
 ]

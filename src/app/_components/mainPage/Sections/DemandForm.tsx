@@ -7,15 +7,17 @@ const DemandForm = () => {
             id='formular'
             className=' flex flex-col gap-4 items-center pt-20'
         >
-            <h1 className='text-center'>Poptat zakázku</h1>
+            <h1 className='text-center'>Máte zájem o naše služby?</h1>
 
             <p className=' w-full sm:w-2/3'>
-                Zašlete nám váš požadavek a my vás zpětně kontaktujeme s
-                cenouvou nabídkou. Pokud již máte svůj 3D model, můžete zakázku
-                poptat přes náš{' '}
+                Vyplňte prosím následující formulář a my vás co nejdříve kontaktujeme s cenovou nabídkou.
+                Do zprávy můžete uvést podrobnosti o vašem projektu. Pokud máte k dispozici fotografie nebo
+                technickou dokumentaci (ve formátech JPG, JPEG, PNG, GIF nebo PDF), můžete je přiložit pomocí funkce nahrávání souborů. 
+                Pokud již máte svůj 3D model (STL), můžete jej nahrát prostřednictvím našeho{' '}
                 <Link href={'/poptat-tisk'}>
-                    Kalkulátor a získat aktuální cenu.
-                </Link>
+                    Kalkulátoru
+                </Link>{' '}
+                a získat okamžitou cenovou nabídku.
             </p>
 
             <div className='w-full max-w-xl'>

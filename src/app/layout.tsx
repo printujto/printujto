@@ -15,10 +15,15 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-    title: 'Printuj to - Zakázkový 3D tisk',
+    title: 'Zakázkový 3D tisk - Printuj to',
     description:
         'Zakázkový 3D tisk, který promění vaše kreativní nápady v realitu. Poskytujeme kvalitní tisk s různými materiály pro rychlé prototypování a náhradní díly.',
-    keywords: ['3D Tisk', 'Zakázkový 3D tisk', '3D tisk na zakázku'],
+    keywords: [
+        '3D Tisk',
+        'Zakázkový 3D tisk',
+        '3D tisk na zakázku',
+        'Printuj to',
+    ],
     openGraph: {
         description: '3D tisk na zakázku.',
         images: [

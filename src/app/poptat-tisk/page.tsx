@@ -48,7 +48,7 @@ const Calculator = () => {
                 <section className=' flex-1 flex flex-col gap-2 items-center'>
                     <h2>Vypočítat cenu tisku</h2>
                     <p className='text-center'>
-                        Vložte svůj 3d model a spočítejte si vašeho tisku
+                        Vložte svůj 3D model a spočítejte si vašeho tisku
                     </p>
 
                     <div className='w-full sm:w-[450px]'>

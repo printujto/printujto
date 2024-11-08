@@ -16,6 +16,9 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
     title: 'Zakázkový 3D tisk - Printuj to',
+    authors: [
+        { name: 'Jindrich Habarta', url: 'https://jindrahabarta.netlify.app/' },
+    ],
     description:
         'Zakázkový 3D tisk, který promění vaše kreativní nápady v realitu. Poskytujeme kvalitní tisk s různými materiály pro rychlé prototypování a náhradní díly.',
     keywords: [

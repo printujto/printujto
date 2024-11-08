@@ -6,6 +6,7 @@ import Footer from './_components/global/Footer'
 import ThemeSwitcher from './_components/global/ThemeSwitcher'
 import { ThemeProvider } from 'next-themes'
 import Background from './_components/global/Background'
+import Head from 'next/head'
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -33,6 +34,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='cs' suppressHydrationWarning>
+            <Head>
+                <link rel='icon' type='image/x-icon' href='./favicon.ico' />
+            </Head>
             <body
                 className={`${roboto.variable} antialiased flex flex-col items-center min-h-screen justify-between bg-white dark:bg-black`}
             >

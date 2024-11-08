@@ -5,7 +5,7 @@ const cards = [
     {
         mt: 4,
         title: '3D tisk',
-        text: 'Poskytujeme rychlý a kvalitní 3D tisk s různými materiály. Vhodné pro prototypování, jedinečné návrhy a náhradní díly. Naše moderní technologie zajistí precizní výsledky a spolehlivost.',
+        text: 'Nabízíme rychlý a kvalitní 3D tisk s využitím široké škály materiálů. Naše služby jsou ideální pro prototypování, tvorbu jedinečných návrhů a výrobu náhradních dílů. Díky moderním technologiím a odbornému přístupu zaručujeme precizní výsledky a maximální spolehlivost. S námi získáte přesně to, co potřebujete, v nejvyšší možné kvalitě.',
     },
     {
         mt: 0,

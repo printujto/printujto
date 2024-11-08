@@ -15,7 +15,7 @@ const cards = [
     {
         mt: 6,
         title: '3D skenování',
-        text: 'Specializujeme se na přesné 3D skenování pro digitalizaci fyzických objektů. Naše kvalitní skenovací služby umožňují další úpravy, archivaci nebo výrobu kopií originálních předmětů. Díky pokročilým technologiím zaručujeme vysokou přesnost a detailnost, což usnadňuje následné zpracování a integraci digitálních modelů do vašich projektů.',
+        text: 'Specializujeme se na přesné 3D skenování pro digitalizaci fyzických objektů. Naše kvalitní skenovací služby umožňují další úpravy, archivaci, nebo výrobu kopií originálních předmětů. Díky pokročilým technologiím zaručujeme vysokou přesnost a detailnost, což usnadňuje následné zpracování a integraci digitálních modelů do vašich projektů.',
     },
     {
         mt: 2,

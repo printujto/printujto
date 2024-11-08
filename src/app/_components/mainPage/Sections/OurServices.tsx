@@ -10,17 +10,17 @@ const cards = [
     {
         mt: 0,
         title: 'Prototypování',
-        text: 'Nabízíme rychlé prototypování a modelování v CADu pro proměnu vašich nápadů ve skutečnost. Vytváříme detailní návrhy a fyzické prototypy, které umožní testování a zdokonalování před zahájením výroby.',
+        text: 'Poskytujeme rychlé prototypování a CAD modelování pro proměnu vašich nápadů ve skutečnost. Vytváříme detailní návrhy a fyzické prototypy, které umožňují testování a zdokonalování před zahájením výroby. Naše služby vám pomohou efektivně ověřit funkčnost a design vašich projektů, urychlit uvedení na trh a minimalizovat náklady spojené s vývojem.',
     },
     {
         mt: 6,
         title: '3D skenování',
-        text: 'Přesné 3D skenování umožňuje digitalizaci fyzických objektů. Nabízíme kvalitní skenování pro další úpravy, archivaci nebo výrobu kopií originálních předmětů.',
+        text: 'Specializujeme se na přesné 3D skenování pro digitalizaci fyzických objektů. Naše kvalitní skenovací služby umožňují další úpravy, archivaci nebo výrobu kopií originálních předmětů. Díky pokročilým technologiím zaručujeme vysokou přesnost a detailnost, což usnadňuje následné zpracování a integraci digitálních modelů do vašich projektů.',
     },
     {
         mt: 2,
         title: 'Poradenství a optimalizace návrhů',
-        text: 'Pomůžeme vám s optimalizací vašich 3D návrhů a výběrem vhodných materiálů. Naše odborné poradenství zajistí, že váš projekt bude nejen estetický, ale také funkční a efektivní pro tisk.',
+        text: 'Nabízíme odborné poradenství a optimalizaci vašich 3D návrhů včetně výběru vhodných materiálů. Naši specialisté zajistí, aby váš projekt byl esteticky atraktivní, funkční a efektivní pro tisk. S našimi zkušenostmi a individuálním přístupem maximalizujete kvalitu výsledného produktu a minimalizujete výrobní náklady, čímž urychlíte uvedení projektu na trh.',
     },
 ]
 

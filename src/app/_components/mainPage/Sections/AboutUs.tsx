@@ -20,7 +20,7 @@ const AboutUs = () => {
                         <div className='absolute bottom-2 right-2 w-fit h-fit md:hidden'>
                             <Button
                                 className='px-8 py-3 mt-2 '
-                                text='Více o nás'
+                                text='VÍCE O NÁS'
                                 link='/o-nas'
                                 icon={<PeopleIcon className='w-6'></PeopleIcon>}
                             ></Button>

@@ -45,7 +45,7 @@ const Slider = () => {
                             width={250}
                             alt='image 1'
                         ></Image>
-                        <h2 className='text-center mt-2'>Cyklon</h2>
+                        <h2 className='text-center mt-2'></h2>
                     </div>
                     <div className='embla__slide min-w-[230px] sm:min-w-[280px] select-none px-4'>
                         <Image

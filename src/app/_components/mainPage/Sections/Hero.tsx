@@ -19,14 +19,14 @@ const Hero = () => {
                 </p>
                 <div className='flex flex-col sm:flex-row items-center  sm:gap-4'>
                     <Button
-                        text='Naše služby'
+                        text='NAŠE SLUŽBY'
                         link='/#nase-sluzby'
                         variant='withoutBg'
                         className='py-4 px-14 mt-4'
                         icon={<ArrowUpRight className='w-4'></ArrowUpRight>}
                     ></Button>
                     <Button
-                        text='Poptat 3D tisk'
+                        text='POPTAT 3D TISK'
                         link='/#formular'
                         className='py-4 px-14 mt-4'
                         icon={<ArrowUpRight className='w-4'></ArrowUpRight>}

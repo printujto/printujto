@@ -9,10 +9,13 @@ const DemandForm = () => {
         >
             <h1 className='text-center'>Máte zájem o naše služby?</h1>
 
-            <p className=' w-full sm:w-2/3'>
+            <p className='w-full sm:w-2/3'>
                 Vyplňte prosím následující formulář a my vás co nejdříve kontaktujeme s cenovou nabídkou.
-                Do zprávy můžete uvést podrobnosti o vašem projektu. Pokud máte k dispozici fotografie nebo
-                technickou dokumentaci (ve formátech JPG, JPEG, PNG, GIF nebo PDF), můžete je přiložit pomocí funkce nahrávání souborů. 
+            </p>
+            <p className='w-full sm:w-2/3'>
+                Do zprávy můžete uvést podrobnosti o vašem projektu. Pokud máte k dispozici fotografie nebo technickou dokumentaci (ve formátech JPG, JPEG, PNG, GIF nebo PDF), můžete je přiložit pomocí funkce nahrávání souborů.
+            </p>
+            <p className='w-full sm:w-2/3'>
                 Pokud již máte svůj 3D model (STL), můžete jej nahrát prostřednictvím našeho{' '}
                 <Link href={'/poptat-tisk'}>
                     Kalkulátoru
